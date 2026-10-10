@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: Apache 2.0
 //
 // xwayland-clip-bridge - keep the X11 CLIPBOARD selection bridge-friendly.
 //

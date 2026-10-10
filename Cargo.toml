@@ -2,8 +2,9 @@
 name = "xwayland-clip-bridge"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.89"
 description = "Bridge the X11 CLIPBOARD selection so Xwayland clients no longer stall on unanswerable targets"
-license = "MIT"
+license = "Apache 2.0"
 
 [dependencies]
 x11rb = { version = "0.13", features = ["xfixes"] }
