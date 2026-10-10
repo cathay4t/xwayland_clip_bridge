@@ -1,0 +1,13 @@
+[package]
+name = "xwayland-clip-bridge"
+version = "0.1.0"
+edition = "2024"
+description = "Bridge the X11 CLIPBOARD selection so Xwayland clients no longer stall on unanswerable targets"
+license = "MIT"
+
+[dependencies]
+x11rb = { version = "0.13", features = ["xfixes"] }
+
+[profile.release]
+lto = true
+strip = true

@@ -1,0 +1,14 @@
+[Unit]
+Description=Xwayland clipboard bridge (avoid X11 paste stalls on Wayland clipboard)
+Documentation=file:///usr/local/share/doc/xwayland-clip-bridge/README.md
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/xwayland-clip-bridge
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
